@@ -1,0 +1,22 @@
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-style: normal;
+  @include font(700, 26px, 1.19, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--hover-color);
+  @media screen and (min-width: 480px) {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.studio-footer {
+  color: var(--button-text);
+}
