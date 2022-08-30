@@ -10,9 +10,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // max-width: 480px;
+  max-width: 1600px;
   width: 100%;
-  height: 400px;
+  // height: 400px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -36,7 +36,7 @@
     background-position: center;
     background-size: cover;
     // max-width: 768px;
-    width: 100%;
+    // width: 100%;
     height: 400px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
     // max-width: 1600px;
-    width: 100%;
+    // width: 100%;
     height: 600px;
     background-color: var(--features-background);
     padding: 200px 0;
@@ -76,12 +76,11 @@
   }
 }
 
-.hero .container {
-  width: 100%;
-  @media screen and (min-width: 1200px) {
-    width: 696px;
-    padding: 0;
-  }
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-main {

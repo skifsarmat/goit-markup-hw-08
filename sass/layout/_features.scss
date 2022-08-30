@@ -1,7 +1,6 @@
 .page-sections {
-  @media screen and (min-width: 480px) {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
+
   @media screen and (min-width: 768px) {
     padding: 60px 0;
   }
@@ -22,10 +21,12 @@
   // flex-basis: calc(100% / 4 - 30px);
   width: 100%;
   @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 2);
+    // width: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 4 - 30px);
+    // width: calc(100% / 4 - 30px);
+    flex-basis: calc((100% - 3 * 30px) / 4);
   }
 }
 
@@ -59,6 +60,16 @@
   // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    display: block;
+    text-align: start;
+    align-items: start;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: start;
+    align-items: start;
+  }
 }
 
 .features-description {

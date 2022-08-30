@@ -66,12 +66,12 @@
         </ul>
       </div>
       <div class="mob-menu is-hidden">
-        <div class="container">
-          <button class="menu-close" type="button">
-            <svg class="close-icon" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-close-icon"></use>
-            </svg>
-          </button>
+        <button class="menu-close" type="button">
+          <svg class="close-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-icon"></use>
+          </svg>
+        </button>
+        <div class="container mobile-menu">
           <nav class="mob-menu-navigation">
             <ul class="mob-menu-list list">
               <li class="mob-menu-item">
@@ -87,38 +87,40 @@
               </li>
             </ul>
           </nav>
-          <ul class="mob-contacts list">
-            <li class="mob-contacts-item list">
-              <a
-                href="mailto:info@devstudio.com"
-                class="mob-contacts-mail link"
-              >
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="mob-contacts-item list">
-              <a href="tel:+380961111111" class="mob-contacts-tel link">
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="mob-soc-list list">
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">Instagram</a>
-            </li>
-            <li class="mob-soc-item"><span class="mob-soc-border"></span></li>
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">Twitter</a>
-            </li>
-            <li class="mob-soc-item"><span class="mob-soc-border"></span></li>
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">Facebook</a>
-            </li>
-            <li class="mob-soc-item"><span class="mob-soc-border"></span></li>
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">LinkedIn</a>
-            </li>
-          </ul>
+          <div class="mobile-contacts">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts-item list">
+                <a href="tel:+380961111111" class="mob-contacts-tel link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-contacts-item list">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts-mail link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Instagram</a>
+              </li>
+
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Twitter</a>
+              </li>
+
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Facebook</a>
+              </li>
+
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -150,19 +152,29 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img src="./images/технокряк.jpg" alt="employees" />
-                    <source srcset="./images/технокряк-mob-1x.jpg 1x,
-                    ./images/технокряк-mob-2x.jpg 2x" media="(max-width:767px)
-                    /> <source srcset="./images/технокряк-tab-1x.jpg 1x,
-                    ./images/технокряк-tab-2x.jpg 2x" media="(min-width:768px)
-                    />
                     <source
                       srcset="
-                        ./images/технокряк.jpg    1x,
-                        ./images/технокряк-2x.jpg 2x
+                        ./images/tehnokrak.jpg    1x,
+                        ./images/tehnokrak-2x.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/tehnokrak-tab-1x.jpg 1x,
+                        ./images/tehnokrak-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tehnokrak-mob-1x.jpg 1x,
+                        ./images/tehnokrak-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/tehnokrak.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -182,15 +194,26 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img src="./images/постер.jpg" alt="basketball" />
-                    <source srcset="./images/постер-mob-1x.jpg 1x,
-                    ./images/постер-mob-2x.jpg 2x" media="(max-width:767px) />
-                    <source srcset="./images/постер-tab-1x.jpg 1x,
-                    ./images/постер-tab-2x.jpg 2x" media="(min-width:768px) />
                     <source
-                      srcset="./images/постер.jpg 1x, ./images/постер-2x.jpg 2x"
+                      srcset="./images/poster.jpg 1x, ./images/poster-2x.jpg 2x"
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/poster-tab-1x.jpg 1x,
+                        ./images/poster-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster-mob-1x.jpg 1x,
+                        ./images/poster-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/poster.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -212,18 +235,29 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img src="./images/ресторан.jpg" alt="restaurant seafood" />
-                    <source srcset="./images/ресторан-mob-1x.jpg 1x,
-                    ./images/ресторан-mob-2x.jpg 2x" media="(max-width:767px) />
-                    <source srcset="./images/ресторан-tab-1x.jpg 1x,
-                    ./images/ресторан-tab-2x.jpg 2x" media="(min-width:768px) />
                     <source
                       srcset="
-                        ./images/ресторан.jpg    1x,
-                        ./images/ресторан-2x.jpg 2x
+                        ./images/restoran.jpg    1x,
+                        ./images/restoran-2x.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/restoran-tab-1x.jpg 1x,
+                        ./images/restoran-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restoran-mob-1x.jpg 1x,
+                        ./images/restoran-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/restoran.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -245,15 +279,26 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img src="./images/prime.jpg" alt="headphone" />
-                    <source srcset="./images/prime-mob-1x.jpg 1x,
-                    ./images/prime-mob-2x.jpg 2x" media="(max-width:767px) />
-                    <source srcset="./images/prime-tab-1x.jpg 1x,
-                    ./images/prime-tab-2x.jpg 2x" media="(min-width:768px) />
                     <source
                       srcset="./images/prime.jpg 1x, ./images/prime-2x.jpg 2x"
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/prime-tab-1x.jpg 1x,
+                        ./images/prime-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-mob-1x.jpg 1x,
+                        ./images/prime-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/prime.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -271,19 +316,71 @@
                 </div>
               </a>
             </li>
+            <!-- <li class="project-item">
+              <a href="" class="portfolio-icon link">
+                <div class="portfolio-overlay">
+                  <picture>
+                    <source
+                      srcset="./images/prime.jpg 1x, ./images/prime-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-tab-1x.jpg 1x,
+                        ./images/prime-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-mob-1x.jpg 1x,
+                        ./images/prime-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/prime.jpg" alt="marketing" />
+                  </picture>
+
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+
+                <div class="portfolio-box">
+                  <h2 class="projects-title">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
+                  <p class="project-description">Маркетинг</p>
+                </div>
+              </a>
+            </li> -->
             <li class="project-item">
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img src="./images/boxes.jpg" alt="boxes" />
-                    <source srcset="./images/boxes-mob-1x.jpg 1x,
-                    ./images/boxes-mob-2x.jpg 2x" media="(max-width:767px) />
-                    <source srcset="./images/boxes-tab-1x.jpg 1x,
-                    ./images/boxes-tab-2x.jpg 2x" media="(min-width:768px) />
                     <source
                       srcset="./images/boxes.jpg 1x, ./images/boxes-2x.jpg 2x"
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/boxes-tab-1x.jpg 1x,
+                        ./images/boxes-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-mob-1x.jpg 1x,
+                        ./images/boxes-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/boxes.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -305,12 +402,6 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img src="./images/inspiration.jpg" alt="mac monitor" />
-                    <source srcset="./images/inspiration-mob-1x.jpg 1x,
-                    ./images/inspiration-mob-2x.jpg 2x" media="(max-width:767px)
-                    /> <source srcset="./images/inspiration-tab-1x.jpg 1x,
-                    ./imagesinspirations-tab-2x.jpg 2x" media="(min-width:768px)
-                    />
                     <source
                       srcset="
                         ./images/inspiration.jpg    1x,
@@ -318,6 +409,21 @@
                       "
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/inspiration-tab-1x.jpg 1x,
+                        ./images/inspiration-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration-mob-1x.jpg 1x,
+                        ./images/inspiration-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/inspiration.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -339,16 +445,6 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img
-                      src="./images/limited-edition.jpg"
-                      alt="females-hair"
-                    />
-                    <source srcset="./images/limited-edition-mob-1x.jpg 1x,
-                    ./images/limited-edition-mob-2x.jpg 2x"
-                    media="(max-width:767px) /> <source
-                    srcset="./images/limited-edition-tab-1x.jpg 1x,
-                    ./images/ilimited-edition-tab-2x.jpg 2x"
-                    media="(min-width:768px) />
                     <source
                       srcset="
                         ./images/limited-edition.jpg    1x,
@@ -356,6 +452,22 @@
                       "
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/limited-edition-tab-1x.jpg 1x,
+                        ./images/limited-edition-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited-edition-mob-1x.jpg 1x,
+                        ./images/limited-edition-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/limited-edition.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -377,15 +489,26 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img src="./images/lab.jpg" alt="label" />
-                    <source srcset="./images/lab-mob-1x.jpg 1x,
-                    ./images/lab-mob-2x.jpg 2x" media="(max-width:767px) />
-                    <source srcset="./images/lab-tab-1x.jpg 1x,
-                    ./images/ilab-tab-2x.jpg 2x" media="(min-width:768px) />
                     <source
                       srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x"
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/lab-tab-1x.jpg 1x,
+                        ./images/lab-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-mob-1x.jpg 1x,
+                        ./images/lab-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/lab.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">
@@ -407,16 +530,6 @@
               <a href="" class="portfolio-icon link">
                 <div class="portfolio-overlay">
                   <picture>
-                    <img
-                      src="./images/growing-bussness.jpg"
-                      alt="arms on the laptop"
-                    />
-                    <source srcset="./images/growing-bussness-mob-1x.jpg 1x,
-                    ./images/growing-bussness-mob-2x.jpg 2x"
-                    media="(max-width:767px) /> <source
-                    srcset="./images/growing-bussness-tab-1x.jpg 1x,
-                    ./images/igrowing-bussness-tab-2x.jpg 2x"
-                    media="(min-width:768px) />
                     <source
                       srcset="
                         ./images/growing-bussness.jpg    1x,
@@ -424,6 +537,22 @@
                       "
                       media="(min-width:1200px)"
                     />
+                    <source
+                      srcset="
+                        ./images/growing-bussness-tab-1x.jpg 1x,
+                        ./images/growing-bussness-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing-bussness-mob-1x.jpg 1x,
+                        ./images/growing-bussness-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/growing-bussness.jpg" alt="marketing" />
                   </picture>
 
                   <p class="portfolio-text">

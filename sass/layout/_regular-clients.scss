@@ -1,15 +1,11 @@
 .regular-clients {
-  @media screen and (min-width: 480px) {
-    padding-left: 15px;
-    padding-top: 123px;
-    padding-right: 15px;
-    padding-bottom: 60px;
-  }
+  // padding-left: 15px;
+  padding-top: 123px;
+  // padding-right: 15px;
+  padding-bottom: 60px;
+
   @media screen and (min-width: 768px) {
-    padding-left: 15px;
-    padding-top: 123px;
-    padding-right: 15px;
-    padding-bottom: 60px;
+    padding: 60px 0;
   }
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
@@ -69,7 +65,7 @@
 .regular-clients__link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 100%;
   height: 92px;
   outline: transparent;
   @media screen and (min-width: 480px) {

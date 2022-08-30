@@ -26,7 +26,7 @@
           Web<span class="studio">Studio</span></a
         >
         <button class="menu-open" type="button">
-          <svg class="open-icon" width="40" height="40">
+          <svg class="open-icon" width="24" height="16">
             <use href="./images/symbol-defs.svg#icon-menu-icon"></use>
           </svg>
         </button>
@@ -66,13 +66,13 @@
           </li>
         </ul>
       </div>
-      <div class="mob-menu is-hidden">
-        <div class="container">
-          <button class="menu-close" type="button">
-            <svg class="close-icon" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-close-icon"></use>
-            </svg>
-          </button>
+      <div class="mob-menu" is-hidden>
+        <button class="menu-close" type="button">
+          <svg class="close-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-icon"></use>
+          </svg>
+        </button>
+        <div class="container mobile-menu">
           <nav class="mob-menu-navigation">
             <ul class="mob-menu-list list">
               <li class="mob-menu-item">
@@ -88,44 +88,48 @@
               </li>
             </ul>
           </nav>
-          <ul class="mob-contacts list">
-            <li class="mob-contacts-item list">
-              <a
-                href="mailto:info@devstudio.com"
-                class="mob-contacts-mail link"
-              >
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="mob-contacts-item list">
-              <a href="tel:+380961111111" class="mob-contacts-tel link">
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="mob-soc-list list">
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">Instagram</a>
-            </li>
-            <li class="mob-soc-item"><span class="mob-soc-border"></span></li>
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">Twitter</a>
-            </li>
-            <li class="mob-soc-item"><span class="mob-soc-border"></span></li>
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">Facebook</a>
-            </li>
-            <li class="mob-soc-item"><span class="mob-soc-border"></span></li>
-            <li class="mob-soc-item">
-              <a href="" class="mob-soc-link link">LinkedIn</a>
-            </li>
-          </ul>
+          <div class="mobile-contacts">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts-item list">
+                <a href="tel:+380961111111" class="mob-contacts-tel link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-contacts-item list">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts-mail link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <div class="mobile-soc">
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">Instagram</a>
+                </li>
+
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">Twitter</a>
+                </li>
+
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">Facebook</a>
+                </li>
+
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="features-main">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>
             Замовити послугу
@@ -198,26 +202,24 @@
           <ul class="our-job-list list">
             <li class="our-job-item">
               <picture>
-                <img src="./images/img-1.jpg" alt="software development" />
-
                 <source
                   srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
                   media="(min-width:1200px)"
                 />
+                <img src="./images/img-1.jpg" alt="software development" />
               </picture>
 
               <p class="our-job-element">Десктопні додатки</p>
             </li>
             <li class="our-job-item">
               <picture>
-                <img
-                  src="./images/img-2.jpg"
-                  alt="mobile application testing"
-                />
-
                 <source
                   srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
                   media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/img-2.jpg"
+                  alt="mobile application testing"
                 />
               </picture>
 
@@ -225,14 +227,13 @@
             </li>
             <li class="our-job-item">
               <picture>
-                <img
-                  src="./images/img-3.jpg"
-                  alt="working with the color palette"
-                />
-
                 <source
                   srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                   media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/img-3.jpg"
+                  alt="working with the color palette"
                 />
               </picture>
 
@@ -247,15 +248,27 @@
           <ul class="our-team__list list">
             <li class="our-team__item">
               <picture>
-                <img src="./images/img-4.jpg" alt="product designer" />
-                <source srcset="./images/img-4-mob-1x.jpg 1x,
-                ./images/img-4-mob-2x.jpg 2x" media="(max-width:767px) />
-                <source srcset="./images/img-4-tab-1x.jpg 1x,
-                ./images/img-4-tab-2x.jpg 2x" media="(min-width:768px) />
                 <source
                   srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"
                   media="(min-width:1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/img-4-tab-1x.jpg 1x,
+                    ./images/img-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-4-mob-1x.jpg 1x,
+                    ./images/img-4-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img src="./images/img-4.jpg" alt="product designer" />
               </picture>
 
               <div class="team">
@@ -303,15 +316,27 @@
             </li>
             <li class="our-team__item">
               <picture>
-                <img src="./images/img-5.jpg" alt="frontend developer" />
-                <source srcset="./images/img-5-mob-1x.jpg 1x,
-                ./images/img-5-mob-2x.jpg 2x" media="(max-width:767px) />
-                <source srcset="./images/img-5-tab-1x.jpg 1x,
-                ./images/img-5-tab-2x.jpg 2x" media="(min-width:768px) />
                 <source
                   srcset="./images/img-5.jpg 1x, ./images/img-5-2x.jpg 2x"
                   media="(min-width:1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/img-5-tab-1x.jpg 1x,
+                    ./images/img-5-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-5-mob-1x.jpg 1x,
+                    ./images/img-5-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img src="./images/img-5.jpg" alt="product designer" />
               </picture>
 
               <div class="team">
@@ -359,15 +384,26 @@
             </li>
             <li class="our-team__item">
               <picture>
-                <img src="./images/img-6.jpg" alt="marketing" />
-                <source srcset="./images/img-6-mob-1x.jpg 1x,
-                ./images/img-6-mob-2x.jpg 2x" media="(max-width:767px) />
-                <source srcset="./images/img-6-tab-1x.jpg 1x,
-                ./images/img-6-tab-2x.jpg 2x" media="(min-width:768px) />
                 <source
                   srcset="./images/img-6.jpg 1x, ./images/img-6-2x.jpg 2x"
                   media="(min-width:1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/img-6-tab-1x.jpg 1x,
+                    ./images/img-6-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-6-mob-1x.jpg 1x,
+                    ./images/img-6-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img src="./images/img-6.jpg" alt="marketing" />
               </picture>
 
               <div class="team">
@@ -415,15 +451,26 @@
             </li>
             <li class="our-team__item">
               <picture>
-                <img src="./images/img-7.jpg" alt="ul designer" />
-                <source srcset="./images/img-7-mob-1x.jpg 1x,
-                ./images/img-7-mob-2x.jpg 2x" media="(max-width:767px) />
-                <source srcset="./images/img-7-tab-1x.jpg 1x,
-                ./images/img-7-tab-2x.jpg 2x" media="(min-width:768px) />
                 <source
                   srcset="./images/img-7.jpg 1x, ./images/img-7-2x.jpg 2x"
                   media="(min-width:1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/img-7-tab-1x.jpg 1x,
+                    ./images/img-7-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-7-mob-1x.jpg 1x,
+                    ./images/img-7-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img src="./images/img-7.jpg" alt="marketing" />
               </picture>
 
               <div class="team">
@@ -683,9 +730,8 @@
               <a href="" class="checkbox-link">Умови договору</a>
             </label>
           </div>
-          <div class="send-button">
-            <button type="submit" class="checkbox-button">Відправити</button>
-          </div>
+
+          <button type="submit" class="checkbox-button">Відправити</button>
         </form>
       </div>
     </div>
