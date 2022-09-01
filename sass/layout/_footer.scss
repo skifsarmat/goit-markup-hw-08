@@ -4,7 +4,7 @@
 }
 
 .footer-display {
-  display: block;
+  // display: block;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -19,8 +19,6 @@
 
 .footer-mob {
   display: block;
-  flex-direction: column;
-  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -52,6 +50,8 @@
   @media screen and (min-width: 1200px) {
     display: block;
     margin-bottom: 0;
+    align-items: start;
+    text-align: left;
   }
 }
 

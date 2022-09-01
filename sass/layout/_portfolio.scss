@@ -13,20 +13,33 @@
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .project-item {
   max-width: 450px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     max-width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: calc((100% - 2 * 30px) / 3);
+    margin-bottom: 0;
   }
 }
 // (100% - 30px) / 2)
@@ -66,7 +79,6 @@
 }
 
 .portfolio-box {
-  display: block;
   flex-grow: 1;
   // height: 100%;
   padding: 20px 24px;

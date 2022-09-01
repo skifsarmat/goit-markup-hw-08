@@ -1,7 +1,7 @@
 .hero {
   margin: 0 auto;
   background-color: var(--features-background);
-  padding: 118px 60px;
+  padding: 118px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -25,7 +25,7 @@
 
   @media screen and (min-width: 768px) {
     margin: 0 auto;
-    padding: 118px 204px;
+    padding: 118px 0;
     background-color: var(--features-background);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -35,7 +35,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    // max-width: 768px;
+    max-width: 1600px;
     // width: 100%;
     height: 400px;
     @media (min-device-pixel-ratio: 2),
@@ -51,7 +51,7 @@
 
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
-    // max-width: 1600px;
+    max-width: 1600px;
     // width: 100%;
     height: 600px;
     background-color: var(--features-background);
@@ -62,7 +62,6 @@
       ),
       url(../images/Fone.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -78,9 +77,18 @@
 
 .hero-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 360px;
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 }
 
 .features-main {
@@ -96,10 +104,17 @@
   // line-height: 1.61;
   // letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  max-width: 696px;
+  @media screen and (min-width: 768px) {
+    max-width: 696px;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 696px;
     @include font(900, 44px, 1.36, 0.06em);
     // font-weight: 900;
     // font-size: 44px;

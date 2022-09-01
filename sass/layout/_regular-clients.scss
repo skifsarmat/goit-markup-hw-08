@@ -1,8 +1,5 @@
 .regular-clients {
-  // padding-left: 15px;
-  padding-top: 123px;
-  // padding-right: 15px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 
   @media screen and (min-width: 768px) {
     padding: 60px 0;
@@ -47,6 +44,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .regular-clients__item {
